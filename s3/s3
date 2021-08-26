@@ -1,0 +1,47 @@
+s3
+-----------------------------
+
+S3 – simple storage service
+
+Bucket Name should always be unique
+
+S3 is an object storage
+EBS is a Block storage, S3 is an object storage
+Best fit for
+Pictures, videos, highly durable media storage
+Cold storage for long-term archive
+Each Amazon s3 object has data, key, meta data
+Each object can contain up to 5 TB of data
+Any number of files can be uploaded to s3
+By default only 100 buckets can be accessed in aws accounts
+There are permissions at bucket level and user level
+
+You can turn on cross region replication of bucket to have its availability in two different regions
+S3 objects can be accessed using http from anywhere as long as you have permissions
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+LAB: To access EC2 from s3
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Create a Role in IAM allowing EC2 to access s3
+Attach the role to EC2
+Install aws-cli on EC2 to interact with cli
+aws s3 cp s3://bucketname .
+. Dot downloads the objects in current directory
+Storage options on AWS
+EBS
+S3 (simple storage service)
+Amazon Glacier (Long term, heap)
+S3 is versatile, Bucket name is unique and global which means once the bucket name is already being
+used, we cannot use the same name for the bucket we created
+
+
+LAB :Hosting a website on s3
+------------------------------------------------
+Storage is way cheaper than compute, s3 is cheaper than EC2
+For static websites it is ideal to host on s3
+Running a website on EC2 will be of $20 a month
+Running a static website on s3 is almost zero
+In the cloud don’t create more than what you need.
+Disadvantages of Traditional storage
+40% of storage is always ideal
+Inactive data is occupy is occupying most of the storage, which takes cost
