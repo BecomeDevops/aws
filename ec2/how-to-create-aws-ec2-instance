@@ -1,0 +1,44 @@
+Steps to launch an ec2 Instance
+
+Go to aws Dashboard and select ec2 in the search bar
+
+You'll be able to see Luanch instance 
+select launc instance
+
+       1) Choose your ami ---> OS
+       2) t2.micro (free trial)
+       3) configurations----- which data center
+       4) we need attach a drive (ebs volumes)
+       5) Tags - Naming conventions (optional)
+       6) security groups
+       7) Create  a key pair and download
+       8) Launch instance
+-------------------------------------------------------
+To connect to an ec2 instance, you need
+
+1)Ec2 instance public ip
+2) pem/ppk key of the instance that was used to create ec2 instance
+
+
+If you're using linux os, you can directly use the pem key to connect to ec2 instance
+
+If you're using windos os, pem key shoudl be converted to ppk
+
+.pem ----> .ppk (windows os)
+
+To connect to an ec2 instance from windows you need a putty
+
+putty is used to connect to the servers remotely, you need to download putty (putty.org)
+
+Downloading putty will download utilities shuch as putty, puttygen, peagunt
+
+---------------------------------------------------
+
+
+converting .pem to ppk (using puttygen)
+
+1) Launch puttygen
+2) Load the pem key 
+3) save it as a private key
+4) select yes option as we procceed without saving paraphrase
+5) save it with .ppk extension
