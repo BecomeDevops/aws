@@ -1,0 +1,47 @@
+Elastic IP
+--------------
+
+Elastic IP -> Whenever you stop and start an ec2 instance the public ip address is disassociated, when it is started a new public ip gets attached to it.
+
+
+In some cases where we need to stop and start instance to perfrom some updates so getting a new ip address every then might lead to issues.
+
+lets assume a domain name is being configured to the existing ip address, whenever the ip address is changed, 
+it will not be able to resolve and there will be a down time, we have to point domain name to the latest public ip that has come after starting the ec2 instance
+
+                                               54.22.34.67 -------------------- homeshopping.com
+
+
+(new ip) attached after stopping and starting  45.34.122.67 ------------------ homeshopping.com
+
+So inoder to overcome from this kind of situation we will use elastic ip, Elastic IP is nothing but a static ip, the ip address remains constant.
+
+when an elastic ip is attached to the instance, the ip address reamins constant irerespective of being stopped/started.
+
+Elastic IP Pricing
+---------------------
+
+There are no charges incurred if the Elastic IP is attached to an EC2 instance
+
+If you just create an Elastic IP and is not attached to EC2 instance then the Elastic IP will be charged on per hour basis
+
+Note: If you don't need an Elastic IP, you can release the Elastic IP to stop charges appear on your account
+
+Elastic IP address Request Limit
+----------------------------------
+
+By default, you can have only 5 Elastic ip addresses per region
+
+Once you release an Elastic IP, the Elastic IP adresses might be allocated to different aws account, if it  is already used by other aws account, we can't recover the released Elastic IP address
+
+Incase if the Elastic IP address is not provisioned by other account, we have an option to recover the Elastic IP  using aws cli
+
+aws ec2 allocate-address --domain vpc --address 203.0.113.3
+
+
+
+Elastic IP Quota Increase
+--------------------------------
+
+As per the business use case if there is a necessity of more the 5 Elastic IP's, from the quotas section in console, you can request for the increase in quota of Elastic IP addresses.
+
