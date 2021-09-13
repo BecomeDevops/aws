@@ -1,0 +1,28 @@
+
+Instance purchasing options
+---------------------------------
+Ec2 offers different types of purchasing options that is suitable for your business needs.
+
+
+Ondemand – Allows you to pay a fixed rate by the hour (or by the second) with no commitment, [No commitment]
+
+Users or business will opt for this Amazon EC2, without any up-front payment or long term commitment.
+Applications with unpredictable workloads that cannot be interrupted
+Applications being developed or tested on Amazon EC2 for first time
+
+
+Reserved Instances: Provides with a capacity reservation, you get significant discount on hourly charge for instance 1 year or 3 year terms.
+The more upfront you pay, the bigger discount we can get.
+
+Applications that have predictable usage
+Standard ROI upto 75% on demand
+Business is able to invest upfront to reduce their total computing costs
+
+
+Spot: You can bid the bid price for instance capacity, it depends upon the supply and demand, you can get good amount of discount, if your application has flexible start and end timings then this would be an ideal choice. If more people are trying to purchase or bidding the price increases.
+
+Suitable for applications  that have flexible start and end times, Applications that are feasible at very low compute prices
+EX: some insurance company checking some big data on the early morning of sundays
+
+If the bid price goes higher than spot price then instances will be terminated.
+
