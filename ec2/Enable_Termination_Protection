@@ -1,0 +1,10 @@
+We can prevent an EC2 instance from being accidentally Terminated
+
+Enabling Termination Protection will help us prevent if we have choosen an EC2 to delete by mistake. 
+As this gives another level of approval to confirm if we can proceed with deletion.
+
+Once, we are pretty sure to go ahead and delete the EC2 instance we should disable the termination protection settings,
+as this will allow us to delete the ec2 instance.
+
+
+Note: In production environments it is advised to Enable termination protection feature.
