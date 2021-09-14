@@ -1,0 +1,37 @@
+
+
+Identity Acess Management 
+-------------------------
+
+
+The aws account which we access after creation of aws account is root account, It gives you the power user access leeting you create/access all the resources available in aws account.
+As a best practice, it is advised to keep your root account seperately, Inorder to do this you can create an iam users and give neccessary permissions that you would be required, You can use this account as iam user to for your daily usage.
+
+Iam - Identity Access Managenment helps you manage aws users, groups and give  permissions based on the principle of least privileged only to the resources in aws that are needed for the users. 
+
+least privelege access - User should have only the permission he requires to perform his task
+
+
+
+Identies
+--------
+user
+group
+role
+
+
+Root Account --- unrestricted access
+
+
+Root Account - Leadership/Director/ceo ---> Enable MFA (google authenticator)
+    |
+   user ---> Admin access (cloud engineer)
+    |
+
+   user- (Developer) ---> EC2, S3, lAMBDA
+   user -Business analyst  ---> s3
+   user - Tester ---> EC2
+   
+
+
+To have a greater security, MFA needs to be enabled, you can use google authenticator app to set up this.
