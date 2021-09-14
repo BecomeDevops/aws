@@ -1,0 +1,27 @@
+
+UserData
+----------
+
+
+UserData ----> You can pass user data while the creation of ec2 instance, the instance is bootstraped with the scripts/commands that are passed to user data.
+
+	       if you want php, maridab or httpd webserver to be readily available right after the instance creation, all these can be installed from userdata section.
+
+	       userdata can be configured only during when the instance is created for the first time, if you want to make any changes to user data, 
+	       the instance needs to be stopped and access the userdata to make any changes.
+
+
+
+UserData
+--------------
+#!/bin/bash
+
+sudo su
+yum update -y
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+
+echo "This content is from EC2 UserData" > /var/www/html/index.html
+
+
