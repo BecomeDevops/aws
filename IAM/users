@@ -1,0 +1,21 @@
+
+IAM user
+--------
+--------
+
+An user is an entity that you create in aws account so that newly created IAM user can interact with the aws services 
+
+
+When an Iam user is created, you can give him the aws console access or programmatic access
+
+
+By default the newly created IAM user do not have any permissions to create /interact with any of the aws services
+
+We can assign the administrative access / just limit him with access to the EC2 or S3, its totally based on what access he requires
+to get his task done.
+
+An Iam user can be a person or an application, in most cases it is for an single individual who can use the assigned credentials and interact with aws services
+
+An Iam user can be added to a group and the iam user can obtain all the roles and polices that are assigned to the group
+
+Note: It is highly advised to enable MFA (Multi factor authentication) for the IAM user as it adds an extra layer of protection to our aws account
