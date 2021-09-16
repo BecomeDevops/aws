@@ -1,0 +1,62 @@
+
+
+What is awscli
+--------------
+--------------
+
+awscli is an command line interface tool using which you can interact and manage multiple aws services from the commandline
+
+
+Install awscli
+---------------------------------------------------------
+---------------------------------------------------------
+
+
+
+apt install awscli    ( on ubuntu)
+
+
+yum install awscli ( on centos, AmazonLinux, Redhat)
+
+
+
+
+    
+List s3 buckets
+------------------------------------------------------------
+
+
+aws s3 ls
+
+
+
+List the contents of particular s3 bucket
+---------------------------------------------------------------
+
+
+aws s3 ls s3://bucketname
+
+eg: aws s3 ls s3://sep16
+
+
+
+To Copy the File from S3 Bucket to EC2
+----------------------------------------------------------------
+
+
+aws s3 cp s3://bucketname/testfile.txt .
+
+eg: aws s3 cp s3://sep16/becomedevopskubernetesresorces.PNG .
+
+Note: . Dot downloads the objects in current directory
+
+
+To Copy the files from EC2 to S3 bucket
+----------------------------------------------------------------
+
+
+
+aws s3 cp ec2-to-s3 s3://sep16/
+
+   
+
