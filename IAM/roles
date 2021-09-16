@@ -1,0 +1,4 @@
+A Role is created and been attached with a set of policies
+AWS Services Require some Role inorder to interact with the resources in other aws services on your behalf.
+Create a Role in IAM allowing EC2 to access s3
+Attach the role to EC2
