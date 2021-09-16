@@ -1,0 +1,4 @@
+Groups - A Group in AWS is just a collection of IAM users. It refers to a bunch of Users.  Groups makes it easier as we can add all the related users to a particular group. This allows you to apply roles and policies to a group, and every user within that group will automatically have these roles and policies.
+
+You can have user groups as Cloud Admins, Developers, Business Analyst
+
