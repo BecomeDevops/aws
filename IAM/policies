@@ -1,0 +1,4 @@
+IAM Policy
+
+Policies are nothing but set of specific permissions that are assigned to users or roles.
+Policies can be attached to an user or role
