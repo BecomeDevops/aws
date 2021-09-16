@@ -1,10 +1,9 @@
-
-
 What is awscli
 --------------
 --------------
 
-awscli is an command line interface tool using which you can interact and manage multiple aws services from the commandline
+awscli is an command line interface tool using which you can interact and manage 
+multiple aws services from the commandline
 
 
 Install awscli
