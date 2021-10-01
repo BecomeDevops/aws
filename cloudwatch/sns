@@ -1,0 +1,13 @@
+SNS
+
+simple notification service
+
+1) Topic
+2) Subscription
+
+
+We can use sns to notify any breach in cpu, memory, disk metrics and other resources
+metrics as well
+
+We can use SNS  to send notifications to email or sms to mobiles
+
