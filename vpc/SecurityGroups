@@ -1,0 +1,8 @@
+
+
+Security groups regulate traffic at the instance level
+
+In security groups we open ports forn which application is listening 
+
+Ex: for doing ssh port 22 should be opened on the security group
+
