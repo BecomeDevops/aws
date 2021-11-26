@@ -25,3 +25,18 @@ systemctl enable httpd
 echo "This content is from EC2 UserData" > /var/www/html/index.html
 
 
+
+userdata
+----------  (ubuntu)
+
+#!/bin/bash
+
+apt update -y
+
+apt install nginx -y
+
+systemctl start nginx
+
+echo "nginx installed from userdata" > /var/www/html/index.html
+
+
