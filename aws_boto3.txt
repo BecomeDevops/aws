@@ -1,0 +1,3 @@
+Boto3 is an python framework, which can interact and create aws resources
+
+
