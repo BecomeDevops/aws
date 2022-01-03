@@ -1,0 +1,2 @@
+Using terraform also we can create aws resources
+
