@@ -3,6 +3,6 @@ S3 is an object storage where you can store image, files and video related conte
 S3 Bucket names should be unique
 
 
-you can put 5TB of data in a buckettt
+you can put 5TB of data in a bucketttt
 
 
