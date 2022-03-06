@@ -2,7 +2,7 @@ SNS - simple notification service
 
 SNS IS USED TO NOTIFY THE SUBSCRIBERS 
 
------file edited at master Branch-------
+-----file edited at master Branch--------
 
 -----file being edited in jan3rd branch-------
 
