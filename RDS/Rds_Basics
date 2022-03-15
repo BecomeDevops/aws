@@ -1,0 +1,34 @@
+RDS - Relational Database Service
+
+** It's a managed databased services
+
+
+RDS offers several types of databases
+
+mysql, postgres, Amazon(aurora), ms-sql, oracle
+
+-------------------------------------------------------
+
+Any Application needs a Database
+
+all the data is stored in the Database
+
+RDS
+----------
+
+Before creating a database
+
+****prerequsite
+-------------
+DB SUBNET Group -for creating a database you need to have
+a DB Subnet Group
+
+DB Subnet Group - Grouping two subnets together
+--------------------------------------------------------
+
+To connect to mysql database from ec2
+
+mysql -h hostname -P 3306 -u username -p password
+
+mysql -h ondemandlabs.cahbromg7lcg.us-east-1.rds.amazonaws.com
+-P 3306 -u admin -p
