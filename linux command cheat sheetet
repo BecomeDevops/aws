@@ -1,0 +1,169 @@
+LINUX COMMAND CHEAT SHEET
+
+SYSTEM
+---------
+
+	uname -a   => Display linux system information
+	uname -r   => display kernel release information
+	uptime   =>   show how long the system has been running + load
+	hostname   => show system host name
+	hostname -I   => display the IP address of the host
+	last reboot   => show system reboot history
+	date   => show the current date and time 
+	cal   => show the month calendar
+	w    => display who is online
+	whoami    =>   who you are logged in as
+	finger user   =>   display information about use
+
+HARDWARE
+---------
+
+	demsg    =>   Detected hardware and boot messages
+	cat/proc/cpuinfo     =>   CPU model
+	cat/proc/meminfo   =>   Hardware memory
+	cat/proc/interrupts   =>   list the number of interrupts per CPU per I/O device
+	lshw   =>   display information on hardware configurations of the system
+	lsblk     =>   display block device related information in Linux
+	free -m   =>  used and free memory  ( -m for MB)
+	lspci -tv    =>   show PCI devices
+	lsusb -tv    =>   show USB devices
+	dmidecode    =>   show hardware info from the BIOS
+	hdparm -i/dev/sda    =>   show info about disk sda
+	hdparm -iT/dev/sda     =>   do a read speed test on disk sda
+	badblocks -s/dev/sda    =>   test for unreadable blocks on disk sda
+
+USERS 
+------
+
+	id     =>     to show active ID with login and group
+	last   =>   to show last logins on the system
+	who   =>   show how is logged on the System
+	groupadd admin   =>   Add group admin 
+	useradd -c   =>   g admin -m sam #create user “sam”
+	userdel sam    =>   delete user sam
+	adduser sam    =>   Add user “sam”
+	usermod   =>  modify user information
+
+FILE COMMAND
+----------
+
+	ls   =>   list of all files 
+	pwd   =>   present working directory
+	mkdir direcrory-name    =>   create a directory
+	rm file-name       =>   delete file 
+	rm -r directory-name   =>   delete directory recursively 
+	rm -f  file-name   =>   forcefully remove file 
+	rm -rf directory-name   =>   forcefully remove directory recursively
+	cp file1 file2   =>   copy file1 to file2
+	cp -r dir1 dir2   =>    copy dir1 to dir2 , create dir2 if it doesn’t exist 
+	mv file1 file2   =>   rename source to dest / move source to directory 
+	touch file-name   =>   create or update file
+	cat file-name   =>   place standard input into file / to see the content in the file 
+	more file-name   =>   output content of the file
+	head file-name   =>   output first 10 lines of the file 
+	tail file-name    =>    output last 10 lines of the file 
+	tail -f file-name   =>   output content of a file as it grows starting with the last 10 lines 
+	gpg -c file   =>   encrypt file 
+	gpg file.gpg   =>   decrypt file 
+	wc   =>   print the number of bytes, word, and lines in files
+	xargs   =>   execute command lines from standard input 
+
+PROCESS REALATED 
+--------------
+
+	ps    =>   display your currently active process
+	ps aux | grep “telnet” =>   find all process id related to telnet process 
+	pmap    => memory map of process 
+	top   => display all running processes 
+	killpid proc   => kill processes named proc 
+	pkill process-name   =>    send signal to a process 
+	bg   => resumes suspended jobs without bringing them to foreground 
+	fg   => brings the most recent job to foreground 
+	fg n   => brings job n to the foreground
+
+FILE PERMISSION RELATED
+-----------------------
+
+	chmod octal file-name   => change the permission of the file to octal
+
+EXAMPLE
+	chmod 777 /data/test.c   => set rwx permission for owner, group world
+	chmod 755 /data/test.c   => set rwx permission for owner,rw for group and world 
+	chown owner-user file    => change owner of the file 
+	chown owner-user.owner-group file-name    =>  change owner and group owner of the file 
+	chown owner-user.owner-group directory   =>  change owner and group owner of the directory
+
+NETWORK
+----------
+
+	ip addr show    => display all network interfaces and ip address 
+	ip address add 192.168.0.1 dev eth0    => set ip address 
+	ethtool eth0   => linux tool to show ethernet status 
+	mii-tool eth0   => linux tool to show ethernet status
+	plng host     => send echo request to test connection
+	whois domain    => get who is information for domain 
+	dig domain    => get DNS information for domain
+	dig -x host    => reverse lookup host
+	host google.com   => lookup DNS ip address for the same 
+	hostname -i    => lookup local ip address 
+	wget file   => Download file
+	netstat-tupl    => listing all active listening ports
+
+COMPRESSION/ARCHIVES:
+---------------------
+
+	tar cf home.tar home    => creat tar named homr.tar containing home
+	tar xf file.tar    => extract the files from file.tar
+	tar czf file.tar.gz files   => create a tar with gzip compression 
+	gzip file   => compress file and renames it to file.gz
+
+INSTALL PACKAGE
+---------------
+
+	rpm -i pkgname.rpm      => install rpm based package
+	rpm -e pkgname   => remove package
+INSTALL FROM SOURCE
+	./configure
+	make
+	make install 
+
+SEARCH
+----------
+
+	grep pattern file    => search for pattern in files  
+	grep-r pattern dir   => search recursively for pattern in dir
+	locate file      => find all instance of file 
+	find /home/tom -name “index”  => find files names that start with “index”
+	find /home -size +10000k    => find the files larger then 10000k /home
+
+LOGIN (SSH AND TELNET)
+-------------------------
+
+	ssh user@host   => connect to host as user
+	ssh -p port user@host   => connect to host using specific port 
+	telnet host    => connect to the system using telenet post
+
+FILE TRANSFER
+--------------
+
+	scp file.txt server2:/tmp    => secure copy file.txt to remote host /tmp folder rsync
+	rsync -a /home/apps/backup/    => synchronize source to destination
+
+DISK USAGE
+-------------
+
+	df -h    => show free space on mounted filesystems
+	df -i     => show free inods on mounted filesystems
+	fdisk -l    => show disks partitions sizes and types 
+	du -ah    => display disk usage in human readable form
+	du -sh    => display total disk usage on the current directory
+	findmnt     => displays target mount point for all filesystems 
+	mount device-path mount-point      => mount a device
+
+
+DIRECTORY TRAVERSE
+---------------------
+
+	cd..       => to go up one level of the directory tree
+	cd        => go to $HOME directory
+	cd/test    => change to/ test directory
