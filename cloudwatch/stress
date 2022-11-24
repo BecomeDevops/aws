@@ -1,0 +1,17 @@
+
+for linux_ami
+-----------------------------
+
+amazon-extras  install epel -y
+
+yum install stress
+
+sudo stress --cpu  8 
+
+
+for ubuntu
+------------
+apt install stress
+
+sudo stress --cpu  8 
+--------------------------------------
