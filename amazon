@@ -1,0 +1,10 @@
+AWS announces Amazon Aurora zero-ETL integration with Amazon Redshift
+Posted On: Nov 29, 2022
+
+Amazon Aurora now supports zero-ETL integration with Amazon Redshift, to enable near real-time analytics and machine learning (ML) using Amazon Redshift on petabytes of transactional data from Aurora. Within seconds of transactional data being written into Aurora, the data is available in Amazon Redshift, so you don’t have to build and maintain complex data pipelines to perform extract, transform, and load (ETL) operations.
+
+This zero-ETL integration also enables you to analyze data from multiple Aurora database clusters in the same new or existing Amazon Redshift instance to derive holistic insights across many applications or partitions. With near real-time access to transactional data, you can leverage Amazon Redshift’s analytics and capabilities such as built-in ML, materialized views, data sharing, and federated access to multiple data stores and data lakes to derive insights from transactional and other data.
+
+Amazon Aurora zero-ETL integration with Amazon Redshift is now available in limited preview for Amazon Aurora MySQL 3 with MySQL 8.0 compatibility in the US East (N. Virginia) Region.
+
+To request access to the limited preview, visit the Preview Page. To learn more about each service, visit the Amazon Aurora or Amazon Redshift webpages.
