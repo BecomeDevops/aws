@@ -55,7 +55,7 @@ To Copy the files from EC2 to S3 bucket
 
 
 
-aws s3 cp ec2-to-s3 s3://sep16/
+aws s3 cp aws.txt s3://sep16/
 
    
 
